@@ -1,0 +1,8 @@
+   0 mkdir -p /opt/test/Artur
+   1 cat readme.txt >> /opt/test/artur/test.txt
+   2 ps -ef | head -2 >> /opt/test/artur/test.txt
+   3 mkdir -p /tmp/test2/artur22
+   4 mv /opt/test/artur/test.txt /tmp/test2/artur2/new2.txt
+   5 vi /tmp/test2/artur2/new2.txt
+   6 cat /tmp/test2/artur2/new2.txt
+   7 history > 24_04_path.txt
