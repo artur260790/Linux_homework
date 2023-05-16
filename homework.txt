@@ -1,8 +1,43 @@
-   0 mkdir -p /opt/test/Artur
-   1 cat readme.txt >> /opt/test/artur/test.txt
-   2 ps -ef | head -2 >> /opt/test/artur/test.txt
-   3 mkdir -p /tmp/test2/artur22
-   4 mv /opt/test/artur/test.txt /tmp/test2/artur2/new2.txt
-   5 vi /tmp/test2/artur2/new2.txt
-   6 cat /tmp/test2/artur2/new2.txt
-   7 history > 24_04_path.txt
+touch myfirstbashscript.sh    # создание файла
+chmod +x myfirstbashscript.sh # установка прав на выполнение
+#!/bin/bash
+# Это комментарий, он игнорируется интерпретатором
+
+# Создание переменной USER и присвоение ей значения
+USER="ваше_имя_здесь"
+
+# Написание текущей даты
+echo "Сегодняшняя дата: $(date)"
+
+# Поприветствование пользователя по имени
+echo "Привет, $USER!"
+
+# Написание текущей директории
+echo "Вы работаете в директории: $(pwd)"
+
+# Написание количества процессов
+echo "Количество процессов: $(ps -ef | wc -l)"
+#!/bin/bash
+# Это комментарий, он игнорируется интерпретатором
+
+# Создание переменной USER и присвоение ей значения
+USER="ваше_имя_здесь"
+
+# Написание текущей даты
+echo "Сегодняшняя дата: $(date)"
+
+# Поприветствование пользователя по имени
+echo "Привет, $USER!"
+
+# Написание текущей директории
+echo "Вы работаете в директории: $(pwd)"
+
+# Написание количества процессов
+echo "Количество процессов: $(ps -ef | wc -l)"
+cat myfirstbashscript.sh
+git init
+git add myfirstbashscript.sh
+git commit -m "Add myfirstbashscript.sh"
+git remote add origin https://github.com/ваш_аккаунт/ваш_репозиторий.git
+git push -u origin master
+
